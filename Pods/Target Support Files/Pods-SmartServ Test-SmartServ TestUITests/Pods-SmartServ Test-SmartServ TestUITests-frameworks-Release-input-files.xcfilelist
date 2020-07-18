@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-SmartServ Test-SmartServ TestUITests/Pods-SmartServ Test-SmartServ TestUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework

@@ -1,0 +1,22 @@
+PODS:
+  - MBProgressHUD (1.2.0)
+  - Realm (5.0.2):
+    - Realm/Headers (= 5.0.2)
+  - Realm/Headers (5.0.2)
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - Realm
+
+SPEC REPOS:
+  trunk:
+    - MBProgressHUD
+    - Realm
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Realm: 6b6f096671b64b04d08974177cabb2ff9343d153
+
+PODFILE CHECKSUM: 14e7a63ea083175aeda88385646108e23a068ccf
+
+COCOAPODS: 1.9.1

@@ -7,7 +7,25 @@
 		<key>SmartServ Test.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>65029E7B24C1AC9C00675878</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>65029E9624C1ACA000675878</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>65029EA124C1ACA000675878</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

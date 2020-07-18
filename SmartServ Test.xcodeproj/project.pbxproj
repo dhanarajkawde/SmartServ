@@ -3,44 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2B5A2193D3882085B488DE /* Pods_SmartServ_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13406823FCA32F0F0AE8CC0C /* Pods_SmartServ_Test.framework */; };
 		65029E8124C1AC9C00675878 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65029E8024C1AC9C00675878 /* AppDelegate.m */; };
-		65029E8424C1AC9C00675878 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65029E8324C1AC9C00675878 /* SceneDelegate.m */; };
 		65029E8724C1AC9C00675878 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65029E8624C1AC9C00675878 /* ViewController.m */; };
 		65029E8A24C1AC9C00675878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65029E8824C1AC9C00675878 /* Main.storyboard */; };
 		65029E8C24C1AC9F00675878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65029E8B24C1AC9F00675878 /* Assets.xcassets */; };
 		65029E8F24C1AC9F00675878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65029E8D24C1AC9F00675878 /* LaunchScreen.storyboard */; };
 		65029E9224C1AC9F00675878 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65029E9124C1AC9F00675878 /* main.m */; };
-		65029E9C24C1ACA000675878 /* SmartServ_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65029E9B24C1ACA000675878 /* SmartServ_TestTests.m */; };
-		65029EA724C1ACA000675878 /* SmartServ_TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65029EA624C1ACA000675878 /* SmartServ_TestUITests.m */; };
+		65029EBC24C1B71600675878 /* ProductListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65029EBB24C1B71600675878 /* ProductListTableViewCell.m */; };
+		65029EC324C1BD8000675878 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65029EC224C1BD8000675878 /* APIManager.m */; };
+		65029EC624C1F33700675878 /* RealmProductDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 65029EC524C1F33700675878 /* RealmProductDetails.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		65029E9824C1ACA000675878 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65029E7424C1AC9C00675878 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65029E7B24C1AC9C00675878;
-			remoteInfo = "SmartServ Test";
-		};
-		65029EA324C1ACA000675878 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65029E7424C1AC9C00675878 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65029E7B24C1AC9C00675878;
-			remoteInfo = "SmartServ Test";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		02C41F25EA8CE89293FE79DF /* Pods-SmartServ Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServ Test.release.xcconfig"; path = "Target Support Files/Pods-SmartServ Test/Pods-SmartServ Test.release.xcconfig"; sourceTree = "<group>"; };
+		0BDACFA2BD64A162B663BF95 /* Pods-SmartServ Test-SmartServ TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServ Test-SmartServ TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmartServ Test-SmartServ TestUITests/Pods-SmartServ Test-SmartServ TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		13406823FCA32F0F0AE8CC0C /* Pods_SmartServ_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartServ_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1717E1BDECFCAFE0C65A73E8 /* Pods-SmartServ TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServ TestTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartServ TestTests/Pods-SmartServ TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1ADE82D7A112293A25AFFF69 /* Pods-SmartServ TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServ TestTests.release.xcconfig"; path = "Target Support Files/Pods-SmartServ TestTests/Pods-SmartServ TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		259FFA90E9D999FC56CE4AA9 /* Pods-SmartServ Test-SmartServ TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServ Test-SmartServ TestUITests.release.xcconfig"; path = "Target Support Files/Pods-SmartServ Test-SmartServ TestUITests/Pods-SmartServ Test-SmartServ TestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3EA652BC55A2DE33527309A6 /* Pods_SmartServ_Test_SmartServ_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartServ_Test_SmartServ_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65029E7C24C1AC9C00675878 /* SmartServ Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmartServ Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65029E7F24C1AC9C00675878 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65029E8024C1AC9C00675878 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		65029E8224C1AC9C00675878 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		65029E8324C1AC9C00675878 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		65029E8524C1AC9C00675878 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		65029E8624C1AC9C00675878 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		65029E8924C1AC9C00675878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,12 +37,14 @@
 		65029E8E24C1AC9F00675878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65029E9024C1AC9F00675878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65029E9124C1AC9F00675878 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		65029E9724C1ACA000675878 /* SmartServ TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SmartServ TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65029E9B24C1ACA000675878 /* SmartServ_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartServ_TestTests.m; sourceTree = "<group>"; };
-		65029E9D24C1ACA000675878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65029EA224C1ACA000675878 /* SmartServ TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SmartServ TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65029EA624C1ACA000675878 /* SmartServ_TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartServ_TestUITests.m; sourceTree = "<group>"; };
-		65029EA824C1ACA000675878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65029EBA24C1B71600675878 /* ProductListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListTableViewCell.h; sourceTree = "<group>"; };
+		65029EBB24C1B71600675878 /* ProductListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListTableViewCell.m; sourceTree = "<group>"; };
+		65029EC124C1BD8000675878 /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		65029EC224C1BD8000675878 /* APIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		65029EC424C1F33700675878 /* RealmProductDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmProductDetails.h; sourceTree = "<group>"; };
+		65029EC524C1F33700675878 /* RealmProductDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmProductDetails.m; sourceTree = "<group>"; };
+		BF00A3479787524E5D94E74E /* Pods_SmartServ_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartServ_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F88408B0B70B40C55B073130 /* Pods-SmartServ Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartServ Test.debug.xcconfig"; path = "Target Support Files/Pods-SmartServ Test/Pods-SmartServ Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,33 +52,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65029E9424C1ACA000675878 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65029E9F24C1ACA000675878 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				2F2B5A2193D3882085B488DE /* Pods_SmartServ_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DBFDD0D519B054FCDF117C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F88408B0B70B40C55B073130 /* Pods-SmartServ Test.debug.xcconfig */,
+				02C41F25EA8CE89293FE79DF /* Pods-SmartServ Test.release.xcconfig */,
+				0BDACFA2BD64A162B663BF95 /* Pods-SmartServ Test-SmartServ TestUITests.debug.xcconfig */,
+				259FFA90E9D999FC56CE4AA9 /* Pods-SmartServ Test-SmartServ TestUITests.release.xcconfig */,
+				1717E1BDECFCAFE0C65A73E8 /* Pods-SmartServ TestTests.debug.xcconfig */,
+				1ADE82D7A112293A25AFFF69 /* Pods-SmartServ TestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		65029E7324C1AC9C00675878 = {
 			isa = PBXGroup;
 			children = (
 				65029E7E24C1AC9C00675878 /* SmartServ Test */,
-				65029E9A24C1ACA000675878 /* SmartServ TestTests */,
-				65029EA524C1ACA000675878 /* SmartServ TestUITests */,
 				65029E7D24C1AC9C00675878 /* Products */,
+				2DBFDD0D519B054FCDF117C3 /* Pods */,
+				D021C91157AD34CAEC57701C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				65029E7C24C1AC9C00675878 /* SmartServ Test.app */,
-				65029E9724C1ACA000675878 /* SmartServ TestTests.xctest */,
-				65029EA224C1ACA000675878 /* SmartServ TestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,37 +93,89 @@
 		65029E7E24C1AC9C00675878 /* SmartServ Test */ = {
 			isa = PBXGroup;
 			children = (
+				65029EB424C1ACC700675878 /* Default */,
+				65029EB624C1ADDA00675878 /* Home */,
+				65029EC024C1BD6300675878 /* API Manager */,
+			);
+			path = "SmartServ Test";
+			sourceTree = "<group>";
+		};
+		65029EB424C1ACC700675878 /* Default */ = {
+			isa = PBXGroup;
+			children = (
 				65029E7F24C1AC9C00675878 /* AppDelegate.h */,
 				65029E8024C1AC9C00675878 /* AppDelegate.m */,
-				65029E8224C1AC9C00675878 /* SceneDelegate.h */,
-				65029E8324C1AC9C00675878 /* SceneDelegate.m */,
-				65029E8524C1AC9C00675878 /* ViewController.h */,
-				65029E8624C1AC9C00675878 /* ViewController.m */,
-				65029E8824C1AC9C00675878 /* Main.storyboard */,
 				65029E8B24C1AC9F00675878 /* Assets.xcassets */,
 				65029E8D24C1AC9F00675878 /* LaunchScreen.storyboard */,
 				65029E9024C1AC9F00675878 /* Info.plist */,
 				65029E9124C1AC9F00675878 /* main.m */,
 			);
-			path = "SmartServ Test";
+			path = Default;
 			sourceTree = "<group>";
 		};
-		65029E9A24C1ACA000675878 /* SmartServ TestTests */ = {
+		65029EB524C1ADCD00675878 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				65029E9B24C1ACA000675878 /* SmartServ_TestTests.m */,
-				65029E9D24C1ACA000675878 /* Info.plist */,
+				65029E8524C1AC9C00675878 /* ViewController.h */,
+				65029E8624C1AC9C00675878 /* ViewController.m */,
 			);
-			path = "SmartServ TestTests";
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		65029EA524C1ACA000675878 /* SmartServ TestUITests */ = {
+		65029EB624C1ADDA00675878 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				65029EA624C1ACA000675878 /* SmartServ_TestUITests.m */,
-				65029EA824C1ACA000675878 /* Info.plist */,
+				65029EBD24C1B72000675878 /* Cell */,
+				65029EB924C1ADF200675878 /* Model */,
+				65029EB724C1ADE000675878 /* View */,
+				65029EB524C1ADCD00675878 /* Controller */,
 			);
-			path = "SmartServ TestUITests";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		65029EB724C1ADE000675878 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65029E8824C1AC9C00675878 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65029EB924C1ADF200675878 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65029EC424C1F33700675878 /* RealmProductDetails.h */,
+				65029EC524C1F33700675878 /* RealmProductDetails.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65029EBD24C1B72000675878 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				65029EBA24C1B71600675878 /* ProductListTableViewCell.h */,
+				65029EBB24C1B71600675878 /* ProductListTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		65029EC024C1BD6300675878 /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				65029EC124C1BD8000675878 /* APIManager.h */,
+				65029EC224C1BD8000675878 /* APIManager.m */,
+			);
+			path = "API Manager";
+			sourceTree = "<group>";
+		};
+		D021C91157AD34CAEC57701C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13406823FCA32F0F0AE8CC0C /* Pods_SmartServ_Test.framework */,
+				3EA652BC55A2DE33527309A6 /* Pods_SmartServ_Test_SmartServ_TestUITests.framework */,
+				BF00A3479787524E5D94E74E /* Pods_SmartServ_TestTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65029EAB24C1ACA000675878 /* Build configuration list for PBXNativeTarget "SmartServ Test" */;
 			buildPhases = (
+				30362C912B872D9ABEBB0A3A /* [CP] Check Pods Manifest.lock */,
 				65029E7824C1AC9C00675878 /* Sources */,
 				65029E7924C1AC9C00675878 /* Frameworks */,
 				65029E7A24C1AC9C00675878 /* Resources */,
+				FC2C128B5504C34199BDEBB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,42 +199,6 @@
 			productName = "SmartServ Test";
 			productReference = 65029E7C24C1AC9C00675878 /* SmartServ Test.app */;
 			productType = "com.apple.product-type.application";
-		};
-		65029E9624C1ACA000675878 /* SmartServ TestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 65029EAE24C1ACA000675878 /* Build configuration list for PBXNativeTarget "SmartServ TestTests" */;
-			buildPhases = (
-				65029E9324C1ACA000675878 /* Sources */,
-				65029E9424C1ACA000675878 /* Frameworks */,
-				65029E9524C1ACA000675878 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				65029E9924C1ACA000675878 /* PBXTargetDependency */,
-			);
-			name = "SmartServ TestTests";
-			productName = "SmartServ TestTests";
-			productReference = 65029E9724C1ACA000675878 /* SmartServ TestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		65029EA124C1ACA000675878 /* SmartServ TestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 65029EB124C1ACA000675878 /* Build configuration list for PBXNativeTarget "SmartServ TestUITests" */;
-			buildPhases = (
-				65029E9E24C1ACA000675878 /* Sources */,
-				65029E9F24C1ACA000675878 /* Frameworks */,
-				65029EA024C1ACA000675878 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				65029EA424C1ACA000675878 /* PBXTargetDependency */,
-			);
-			name = "SmartServ TestUITests";
-			productName = "SmartServ TestUITests";
-			productReference = 65029EA224C1ACA000675878 /* SmartServ TestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,14 +211,6 @@
 				TargetAttributes = {
 					65029E7B24C1AC9C00675878 = {
 						CreatedOnToolsVersion = 11.1;
-					};
-					65029E9624C1ACA000675878 = {
-						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 65029E7B24C1AC9C00675878;
-					};
-					65029EA124C1ACA000675878 = {
-						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 65029E7B24C1AC9C00675878;
 					};
 				};
 			};
@@ -229,8 +228,6 @@
 			projectRoot = "";
 			targets = (
 				65029E7B24C1AC9C00675878 /* SmartServ Test */,
-				65029E9624C1ACA000675878 /* SmartServ TestTests */,
-				65029EA124C1ACA000675878 /* SmartServ TestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,21 +243,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65029E9524C1ACA000675878 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65029EA024C1ACA000675878 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30362C912B872D9ABEBB0A3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartServ Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC2C128B5504C34199BDEBB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartServ Test/Pods-SmartServ Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartServ Test/Pods-SmartServ Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartServ Test/Pods-SmartServ Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65029E7824C1AC9C00675878 /* Sources */ = {
@@ -268,42 +293,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				65029E8724C1AC9C00675878 /* ViewController.m in Sources */,
+				65029EBC24C1B71600675878 /* ProductListTableViewCell.m in Sources */,
+				65029EC624C1F33700675878 /* RealmProductDetails.m in Sources */,
 				65029E8124C1AC9C00675878 /* AppDelegate.m in Sources */,
 				65029E9224C1AC9F00675878 /* main.m in Sources */,
-				65029E8424C1AC9C00675878 /* SceneDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65029E9324C1ACA000675878 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65029E9C24C1ACA000675878 /* SmartServ_TestTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65029E9E24C1ACA000675878 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65029EA724C1ACA000675878 /* SmartServ_TestUITests.m in Sources */,
+				65029EC324C1BD8000675878 /* APIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		65029E9924C1ACA000675878 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 65029E7B24C1AC9C00675878 /* SmartServ Test */;
-			targetProxy = 65029E9824C1ACA000675878 /* PBXContainerItemProxy */;
-		};
-		65029EA424C1ACA000675878 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 65029E7B24C1AC9C00675878 /* SmartServ Test */;
-			targetProxy = 65029EA324C1ACA000675878 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		65029E8824C1AC9C00675878 /* Main.storyboard */ = {
@@ -437,11 +435,12 @@
 		};
 		65029EAC24C1ACA000675878 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88408B0B70B40C55B073130 /* Pods-SmartServ Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27J356AFNZ;
-				INFOPLIST_FILE = "SmartServ Test/Info.plist";
+				INFOPLIST_FILE = "SmartServ Test/Default/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +453,12 @@
 		};
 		65029EAD24C1ACA000675878 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C41F25EA8CE89293FE79DF /* Pods-SmartServ Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27J356AFNZ;
-				INFOPLIST_FILE = "SmartServ Test/Info.plist";
+				INFOPLIST_FILE = "SmartServ Test/Default/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,82 +466,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smartServ.SmartServ-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		65029EAF24C1ACA000675878 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 27J356AFNZ;
-				INFOPLIST_FILE = "SmartServ TestTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.smartServ.SmartServ-TestTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartServ Test.app/SmartServ Test";
-			};
-			name = Debug;
-		};
-		65029EB024C1ACA000675878 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 27J356AFNZ;
-				INFOPLIST_FILE = "SmartServ TestTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.smartServ.SmartServ-TestTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartServ Test.app/SmartServ Test";
-			};
-			name = Release;
-		};
-		65029EB224C1ACA000675878 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 27J356AFNZ;
-				INFOPLIST_FILE = "SmartServ TestUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.smartServ.SmartServ-TestUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SmartServ Test";
-			};
-			name = Debug;
-		};
-		65029EB324C1ACA000675878 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 27J356AFNZ;
-				INFOPLIST_FILE = "SmartServ TestUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.smartServ.SmartServ-TestUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SmartServ Test";
 			};
 			name = Release;
 		};
@@ -562,24 +486,6 @@
 			buildConfigurations = (
 				65029EAC24C1ACA000675878 /* Debug */,
 				65029EAD24C1ACA000675878 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		65029EAE24C1ACA000675878 /* Build configuration list for PBXNativeTarget "SmartServ TestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65029EAF24C1ACA000675878 /* Debug */,
-				65029EB024C1ACA000675878 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		65029EB124C1ACA000675878 /* Build configuration list for PBXNativeTarget "SmartServ TestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65029EB224C1ACA000675878 /* Debug */,
-				65029EB324C1ACA000675878 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
