@@ -18,6 +18,7 @@
 {
     RLMResults *arrProduct;
     RLMResults *arrTempProduct;
+    NSMutableArray *arraySortedProduct;
     long selectedIndex;
     BOOL isSetPriceFilter;
 }

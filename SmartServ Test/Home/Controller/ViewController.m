@@ -24,6 +24,8 @@
     [self setUpPicker];
     self.txtPriceFilter.tintColor = [UIColor clearColor];
     
+    self->arraySortedProduct = [NSMutableArray array];
+    
     self.arrSort = @[@"Popularity", @"Price -- Low to High", @"Price -- High to Low", @"Price -- ₹0 To ₹5000", @"Price -- ₹5000 To ₹10000", @"Price -- ₹10000 To ₹20000", @"Price -- ₹20000 To ₹40000", @"Price -- More than ₹40000"];
     
     isSetPriceFilter = NO;
@@ -37,8 +39,14 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
            
+            [self->arraySortedProduct removeAllObjects];
+            
             self->arrProduct = [RealmProductDetails allObjects];
             self->arrTempProduct = self->arrProduct;
+            
+            for (RLMObject *object in self->arrTempProduct) {
+                [self->arraySortedProduct addObject:object];
+            }
             
             [self.tblProductList reloadData];
         });
@@ -71,7 +79,7 @@
        
         [[APIManager sharedManager] showProgressHUD];
     });
-    
+        
     [[APIManager sharedManager] APICall:@"GET" with:@"https://s3.amazonaws.com/open-to-cors/assignment.json" block:^(id response) {
         
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -111,9 +119,15 @@
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
                        
+                        [self->arraySortedProduct removeAllObjects];
+                        
                         self->arrProduct = [[RealmProductDetails allObjects] sortedResultsUsingKeyPath:@"popularity" ascending:false];
                         self->arrTempProduct = self->arrProduct;
-                                            
+                               
+                        for (RLMObject *object in self->arrTempProduct) {
+                            [self->arraySortedProduct addObject:object];
+                        }
+                        
                         [self.tblProductList reloadData];
                     });
                 }
@@ -158,7 +172,33 @@
                 [self filterProduct:self->selectedIndex];
             }
             else {
-                self->arrTempProduct = [self->arrProduct objectsWhere:@"title CONTAINS[cd] %@", textField.text];
+                
+                NSString * str = textField.text;
+                NSArray * arr = [str componentsSeparatedByString:@" "];
+                
+                RLMResults *arrSortProduct;
+                
+                if (arr > 0) {
+                    
+                    for (int i = 0; i < arr.count; i++) {
+                        
+                        arrSortProduct = [self->arrProduct objectsWhere:@"title CONTAINS[cd] %@", arr[i]];
+                        
+                        for (RLMObject *object in arrSortProduct) {
+                            [self->arraySortedProduct addObject:object];
+                        }
+                    }
+                }
+                else {
+                    arrSortProduct = [self->arrProduct objectsWhere:@"title CONTAINS[cd] %@", str];
+                    
+                    for (RLMObject *object in arrSortProduct) {
+                        [self->arraySortedProduct addObject:object];
+                    }
+                }
+                
+                NSOrderedSet *mySet = [[NSOrderedSet alloc] initWithArray:self->arraySortedProduct];
+                self->arraySortedProduct = [[NSMutableArray alloc] initWithArray:[mySet array]];
             }
         }
                             
@@ -219,6 +259,8 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{
         
+        [self->arraySortedProduct removeAllObjects];
+        
         self->arrProduct = [[RealmProductDetails allObjects] sortedResultsUsingKeyPath:type ascending:ascending];
         
         if (![self.txtSearch.text isEqualToString:@""]) {
@@ -227,6 +269,10 @@
         }
         else {
             self->arrTempProduct = self->arrProduct;
+        }
+        
+        for (RLMObject *object in self->arrTempProduct) {
+            [self->arraySortedProduct addObject:object];
         }
                             
         [self.tblProductList reloadData];
@@ -240,6 +286,8 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{
        
+        [self->arraySortedProduct removeAllObjects];
+        
         if (min == 40000) { /// more than 40000
             if ([self.txtSearch.text isEqualToString:@""]) {
                 
@@ -257,6 +305,10 @@
                 self->arrTempProduct = [self->arrProduct objectsWhere:@"title CONTAINS[cd] %@ && price >= %lld && price <= %lld", self.txtSearch.text, min, max];
             }
         }
+        
+        for (RLMObject *object in self->arrTempProduct) {
+            [self->arraySortedProduct addObject:object];
+        }
                             
         [self.tblProductList reloadData];
     });
@@ -267,15 +319,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return [arrTempProduct count];
+    return [arraySortedProduct count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     ProductListTableViewCell *productListTableViewCell = [_tblProductList dequeueReusableCellWithIdentifier:@"ProductListTableViewCell" forIndexPath:indexPath];
     
-    productListTableViewCell.lblName.text = [[arrTempProduct objectAtIndex:indexPath.row] title];
-    productListTableViewCell.lblPrice.text = [NSString stringWithFormat:@"Price: ₹%lld",[[arrTempProduct objectAtIndex:indexPath.row] price]];
+    productListTableViewCell.lblName.text = [[arraySortedProduct objectAtIndex:indexPath.row] title];
+    productListTableViewCell.lblPrice.text = [NSString stringWithFormat:@"Price: ₹%lld",[[arraySortedProduct objectAtIndex:indexPath.row] price]];
     
     if ([productListTableViewCell.lblName.text localizedCaseInsensitiveContainsString:@"apple"]) { /// check for apple product
         productListTableViewCell.imgViwProduct.image = [UIImage imageNamed:@"ios"];
